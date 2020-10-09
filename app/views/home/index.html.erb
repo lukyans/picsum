@@ -1,9 +1,8 @@
 <div class="container">
   <div class="row">
     <% @images.each do |image| %>
-    
       <div class="col-3">
-        <%= image_tag image["url"], class: "img-fluid rounded" %>
+        <%= image_tag "#{image["download_url"]}", class: "img-fluid rounded" %>
       </div>
     <% end %>
   </div>
